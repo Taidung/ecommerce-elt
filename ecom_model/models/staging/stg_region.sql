@@ -4,12 +4,12 @@ with source as (
 )
 
 select
-    region_code,
+    region_code as region_id,
     city,
     state,
     country,
     country_latitude,
     country_longitude,
-    region,
+    region as region_name,
     market
 from source

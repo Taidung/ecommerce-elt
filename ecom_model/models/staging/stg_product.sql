@@ -5,7 +5,7 @@ with source as (
 
 select
     product_code as product_id,
-    product,
+    product as product_name,
     category,
     subcategory
 from source

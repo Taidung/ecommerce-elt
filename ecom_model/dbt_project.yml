@@ -13,4 +13,9 @@ models:
   ecom_model:
     staging:
       +materialized: view
+    marts:
+      +materialized: table
+    analytics:
+      +materialized: view
+      +schema: reports
 

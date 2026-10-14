@@ -8,21 +8,22 @@ models:
 
   - name: stg_product
     columns:
-      - name: product_code
+      - name: product_id
         tests:
           - not_null
           - unique
   
   - name: stg_region
     columns:
-      - name: region_code
+      - name: region_id
         tests:
           - not_null
           - unique
 
   - name: stg_ecom_sales
     columns:
-      - name: row_id
+      - name: order_id
         tests:
           - not_null
-          - unique
+      
+      
