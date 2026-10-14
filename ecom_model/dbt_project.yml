@@ -1,0 +1,16 @@
+name: ecom_model
+
+profile: ecom_model
+
+seed-paths: ["seeds"]
+model-paths: ["models"]
+macro-paths: ["macros"]
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  ecom_model:
+    staging:
+      +materialized: view
+

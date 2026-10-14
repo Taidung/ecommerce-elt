@@ -1,0 +1,28 @@
+models:
+  - name: stg_customer
+    columns:
+      - name: customer_id
+        tests:
+          - not_null
+          - unique
+
+  - name: stg_product
+    columns:
+      - name: product_code
+        tests:
+          - not_null
+          - unique
+  
+  - name: stg_region
+    columns:
+      - name: region_code
+        tests:
+          - not_null
+          - unique
+
+  - name: stg_ecom_sales
+    columns:
+      - name: row_id
+        tests:
+          - not_null
+          - unique
