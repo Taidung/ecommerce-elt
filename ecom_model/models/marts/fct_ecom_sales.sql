@@ -31,7 +31,7 @@ select
     r.region_key,
     p.product_key,
     s.quantity,
-    s.sales,
+    s.revenue,
     s.discount,
     s.profit
 from sales s

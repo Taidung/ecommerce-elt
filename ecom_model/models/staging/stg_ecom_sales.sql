@@ -11,7 +11,7 @@ select
     region_code as region_id,
     product_code as product_id,
     quantity,
-    sales,
+    sales as revenue,
     discount,
     profit
 from source
